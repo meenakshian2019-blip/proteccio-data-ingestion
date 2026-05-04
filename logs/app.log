@@ -1,0 +1,185 @@
+2026-05-03 10:36:13,460 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 10:36:13,460 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 10:36:13,460 INFO Scheduler started
+2026-05-03 10:36:13,974 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-03 10:36:13,974 INFO [33mPress CTRL+C to quit[0m
+2026-05-03 10:36:13,986 INFO  * Restarting with stat
+2026-05-03 10:36:14,686 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 10:36:14,686 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 10:36:14,688 INFO Scheduler started
+2026-05-03 10:36:14,688 WARNING  * Debugger is active!
+2026-05-03 10:36:14,717 INFO  * Debugger PIN: 541-868-009
+2026-05-03 10:44:01,941 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 10:44:01,941 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 10:44:01,941 INFO Scheduler started
+2026-05-03 10:44:05,091 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-03 10:44:05,091 INFO [33mPress CTRL+C to quit[0m
+2026-05-03 10:44:05,107 INFO  * Restarting with stat
+2026-05-03 10:44:13,166 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 10:44:13,166 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 10:44:13,166 INFO Scheduler started
+2026-05-03 10:44:13,181 WARNING  * Debugger is active!
+2026-05-03 10:44:13,181 INFO  * Debugger PIN: 541-868-009
+2026-05-03 10:50:54,460 INFO 127.0.0.1 - - [03/May/2026 10:50:54] "GET / HTTP/1.1" 200 -
+2026-05-03 10:50:56,247 INFO 127.0.0.1 - - [03/May/2026 10:50:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-05-03 10:54:01,942 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 10:54:01 IST)" (scheduled at 2026-05-03 10:54:01.941517+05:30)
+2026-05-03 10:54:01,942 INFO Scheduled ingestion job executed
+2026-05-03 10:54:01,943 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:04:01 IST)" executed successfully
+2026-05-03 10:54:13,179 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 10:54:13 IST)" (scheduled at 2026-05-03 10:54:13.166177+05:30)
+2026-05-03 10:54:13,179 INFO Scheduled ingestion job executed
+2026-05-03 10:54:13,179 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:04:13 IST)" executed successfully
+2026-05-03 10:58:37,566 INFO 127.0.0.1 - - [03/May/2026 10:58:37] "GET /db/init HTTP/1.1" 200 -
+2026-05-03 10:58:56,460 INFO 127.0.0.1 - - [03/May/2026 10:58:56] "GET /db/tables HTTP/1.1" 200 -
+2026-05-03 11:04:01,947 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:14:01 IST)" (scheduled at 2026-05-03 11:04:01.941517+05:30)
+2026-05-03 11:04:01,949 INFO Scheduled ingestion job executed
+2026-05-03 11:04:01,949 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:14:01 IST)" executed successfully
+2026-05-03 11:04:13,172 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:14:13 IST)" (scheduled at 2026-05-03 11:04:13.166177+05:30)
+2026-05-03 11:04:13,172 INFO Scheduled ingestion job executed
+2026-05-03 11:04:13,173 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:14:13 IST)" executed successfully
+2026-05-03 11:14:01,951 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:24:01 IST)" (scheduled at 2026-05-03 11:14:01.941517+05:30)
+2026-05-03 11:14:01,951 INFO Scheduled ingestion job executed
+2026-05-03 11:14:01,951 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:24:01 IST)" executed successfully
+2026-05-03 11:14:13,175 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:24:13 IST)" (scheduled at 2026-05-03 11:14:13.166177+05:30)
+2026-05-03 11:14:13,176 INFO Scheduled ingestion job executed
+2026-05-03 11:14:13,176 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:24:13 IST)" executed successfully
+2026-05-03 11:24:01,943 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:34:01 IST)" (scheduled at 2026-05-03 11:24:01.941517+05:30)
+2026-05-03 11:24:01,943 INFO Scheduled ingestion job executed
+2026-05-03 11:24:01,943 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:34:01 IST)" executed successfully
+2026-05-03 11:24:13,178 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:34:13 IST)" (scheduled at 2026-05-03 11:24:13.166177+05:30)
+2026-05-03 11:24:13,178 INFO Scheduled ingestion job executed
+2026-05-03 11:24:13,178 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:34:13 IST)" executed successfully
+2026-05-03 11:34:01,943 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:44:01 IST)" (scheduled at 2026-05-03 11:34:01.941517+05:30)
+2026-05-03 11:34:01,943 INFO Scheduled ingestion job executed
+2026-05-03 11:34:01,943 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:44:01 IST)" executed successfully
+2026-05-03 11:34:13,178 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:44:13 IST)" (scheduled at 2026-05-03 11:34:13.166177+05:30)
+2026-05-03 11:34:13,178 INFO Scheduled ingestion job executed
+2026-05-03 11:34:13,178 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:44:13 IST)" executed successfully
+2026-05-03 11:44:01,947 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:54:01 IST)" (scheduled at 2026-05-03 11:44:01.941517+05:30)
+2026-05-03 11:44:01,947 INFO Scheduled ingestion job executed
+2026-05-03 11:44:01,947 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:54:01 IST)" executed successfully
+2026-05-03 11:44:13,170 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:54:13 IST)" (scheduled at 2026-05-03 11:44:13.166177+05:30)
+2026-05-03 11:44:13,170 INFO Scheduled ingestion job executed
+2026-05-03 11:44:13,170 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 11:54:13 IST)" executed successfully
+2026-05-03 11:54:01,947 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:04:01 IST)" (scheduled at 2026-05-03 11:54:01.941517+05:30)
+2026-05-03 11:54:01,947 INFO Scheduled ingestion job executed
+2026-05-03 11:54:01,947 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:04:01 IST)" executed successfully
+2026-05-03 11:54:13,170 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:04:13 IST)" (scheduled at 2026-05-03 11:54:13.166177+05:30)
+2026-05-03 11:54:13,170 INFO Scheduled ingestion job executed
+2026-05-03 11:54:13,170 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:04:13 IST)" executed successfully
+2026-05-03 12:04:01,956 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:14:01 IST)" (scheduled at 2026-05-03 12:04:01.941517+05:30)
+2026-05-03 12:04:01,956 INFO Scheduled ingestion job executed
+2026-05-03 12:04:01,956 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:14:01 IST)" executed successfully
+2026-05-03 12:04:13,173 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:14:13 IST)" (scheduled at 2026-05-03 12:04:13.166177+05:30)
+2026-05-03 12:04:13,173 INFO Scheduled ingestion job executed
+2026-05-03 12:04:13,173 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:14:13 IST)" executed successfully
+2026-05-03 12:13:45,895 INFO 127.0.0.1 - - [03/May/2026 12:13:45] "POST /upload HTTP/1.1" 200 -
+2026-05-03 12:14:01,947 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:24:01 IST)" (scheduled at 2026-05-03 12:14:01.941517+05:30)
+2026-05-03 12:14:01,947 INFO Scheduled ingestion job executed
+2026-05-03 12:14:01,949 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:24:01 IST)" executed successfully
+2026-05-03 12:14:13,170 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:24:13 IST)" (scheduled at 2026-05-03 12:14:13.166177+05:30)
+2026-05-03 12:14:13,170 INFO Scheduled ingestion job executed
+2026-05-03 12:14:13,171 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:24:13 IST)" executed successfully
+2026-05-03 12:21:05,726 INFO  * Detected change in 'D:\\CET Meenakshi\\CET\\proteccio_day1\\modules\\metadata.py', reloading
+2026-05-03 12:27:24,627 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 12:27:24,627 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 12:27:24,627 INFO Scheduler started
+2026-05-03 12:27:25,221 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-05-03 12:27:25,221 INFO [33mPress CTRL+C to quit[0m
+2026-05-03 12:27:25,252 INFO  * Restarting with stat
+2026-05-03 12:27:26,004 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 12:27:26,004 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 12:27:26,004 INFO Scheduler started
+2026-05-03 12:27:26,012 WARNING  * Debugger is active!
+2026-05-03 12:27:26,232 INFO  * Debugger PIN: 541-868-009
+2026-05-03 12:37:24,632 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:37:24 IST)" (scheduled at 2026-05-03 12:37:24.627192+05:30)
+2026-05-03 12:37:24,632 INFO Scheduled ingestion job executed
+2026-05-03 12:37:24,632 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:47:24 IST)" executed successfully
+2026-05-03 12:37:26,013 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:37:26 IST)" (scheduled at 2026-05-03 12:37:26.004873+05:30)
+2026-05-03 12:37:26,014 INFO Scheduled ingestion job executed
+2026-05-03 12:37:26,015 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:47:26 IST)" executed successfully
+2026-05-03 12:47:24,640 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:57:24 IST)" (scheduled at 2026-05-03 12:47:24.627192+05:30)
+2026-05-03 12:47:24,641 INFO Scheduled ingestion job executed
+2026-05-03 12:47:24,641 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:57:24 IST)" executed successfully
+2026-05-03 12:47:26,019 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:57:26 IST)" (scheduled at 2026-05-03 12:47:26.004873+05:30)
+2026-05-03 12:47:26,019 INFO Scheduled ingestion job executed
+2026-05-03 12:47:26,019 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 12:57:26 IST)" executed successfully
+2026-05-03 12:57:24,637 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:07:24 IST)" (scheduled at 2026-05-03 12:57:24.627192+05:30)
+2026-05-03 12:57:24,637 INFO Scheduled ingestion job executed
+2026-05-03 12:57:24,637 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:07:24 IST)" executed successfully
+2026-05-03 12:57:26,019 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:07:26 IST)" (scheduled at 2026-05-03 12:57:26.004873+05:30)
+2026-05-03 12:57:26,019 INFO Scheduled ingestion job executed
+2026-05-03 12:57:26,019 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:07:26 IST)" executed successfully
+2026-05-03 13:01:04,889 INFO 127.0.0.1 - - [03/May/2026 13:01:04] "POST /upload HTTP/1.1" 200 -
+2026-05-03 13:07:24,639 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:17:24 IST)" (scheduled at 2026-05-03 13:07:24.627192+05:30)
+2026-05-03 13:07:24,639 INFO Scheduled ingestion job executed
+2026-05-03 13:07:24,639 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:17:24 IST)" executed successfully
+2026-05-03 13:07:26,010 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:17:26 IST)" (scheduled at 2026-05-03 13:07:26.004873+05:30)
+2026-05-03 13:07:26,010 INFO Scheduled ingestion job executed
+2026-05-03 13:07:26,010 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:17:26 IST)" executed successfully
+2026-05-03 13:15:35,871 INFO  * Detected change in 'D:\\CET Meenakshi\\CET\\proteccio_day1\\modules\\normalizer.py', reloading
+2026-05-03 13:15:40,014 INFO  * Restarting with stat
+2026-05-03 13:16:02,104 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 13:16:02,105 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 13:16:02,106 INFO Scheduler started
+2026-05-03 13:16:02,403 WARNING  * Debugger is active!
+2026-05-03 13:16:02,513 INFO  * Debugger PIN: 541-868-009
+2026-05-03 13:17:24,633 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:27:24 IST)" (scheduled at 2026-05-03 13:17:24.627192+05:30)
+2026-05-03 13:17:24,633 INFO Scheduled ingestion job executed
+2026-05-03 13:17:24,633 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:27:24 IST)" executed successfully
+2026-05-03 13:23:06,602 INFO  * Detected change in 'D:\\CET Meenakshi\\CET\\proteccio_day1\\modules\\normalizer.py', reloading
+2026-05-03 13:23:06,672 INFO  * Restarting with stat
+2026-05-03 13:23:10,752 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 13:23:10,752 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 13:23:10,752 INFO Scheduler started
+2026-05-03 13:23:10,767 WARNING  * Debugger is active!
+2026-05-03 13:23:10,775 INFO  * Debugger PIN: 541-868-009
+2026-05-03 13:27:24,630 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:37:24 IST)" (scheduled at 2026-05-03 13:27:24.627192+05:30)
+2026-05-03 13:27:24,630 INFO Scheduled ingestion job executed
+2026-05-03 13:27:24,630 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:37:24 IST)" executed successfully
+2026-05-03 13:27:35,886 INFO  * Detected change in 'D:\\CET Meenakshi\\CET\\proteccio_day1\\modules\\uploader.py', reloading
+2026-05-03 13:27:35,948 INFO  * Restarting with stat
+2026-05-03 13:27:40,190 INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-05-03 13:27:40,190 INFO Added job "scheduled_job" to job store "default"
+2026-05-03 13:27:40,190 INFO Scheduler started
+2026-05-03 13:27:40,207 WARNING  * Debugger is active!
+2026-05-03 13:27:40,219 INFO  * Debugger PIN: 541-868-009
+2026-05-03 13:37:24,629 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:47:24 IST)" (scheduled at 2026-05-03 13:37:24.627192+05:30)
+2026-05-03 13:37:24,629 INFO Scheduled ingestion job executed
+2026-05-03 13:37:24,629 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:47:24 IST)" executed successfully
+2026-05-03 13:37:40,200 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:37:40 IST)" (scheduled at 2026-05-03 13:37:40.190854+05:30)
+2026-05-03 13:37:40,200 INFO Scheduled ingestion job executed
+2026-05-03 13:37:40,200 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:47:40 IST)" executed successfully
+2026-05-03 13:47:24,628 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:57:24 IST)" (scheduled at 2026-05-03 13:47:24.627192+05:30)
+2026-05-03 13:47:24,628 INFO Scheduled ingestion job executed
+2026-05-03 13:47:24,628 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:57:24 IST)" executed successfully
+2026-05-03 13:47:40,201 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:57:40 IST)" (scheduled at 2026-05-03 13:47:40.190854+05:30)
+2026-05-03 13:47:40,201 INFO Scheduled ingestion job executed
+2026-05-03 13:47:40,201 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 13:57:40 IST)" executed successfully
+2026-05-03 13:57:24,628 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:07:24 IST)" (scheduled at 2026-05-03 13:57:24.627192+05:30)
+2026-05-03 13:57:24,628 INFO Scheduled ingestion job executed
+2026-05-03 13:57:24,628 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:07:24 IST)" executed successfully
+2026-05-03 13:57:40,198 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:07:40 IST)" (scheduled at 2026-05-03 13:57:40.190854+05:30)
+2026-05-03 13:57:40,198 INFO Scheduled ingestion job executed
+2026-05-03 13:57:40,198 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:07:40 IST)" executed successfully
+2026-05-03 14:07:30,595 WARNING Run time of job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:17:24 IST)" was missed by 0:00:01.083839
+2026-05-03 14:07:40,201 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:17:40 IST)" (scheduled at 2026-05-03 14:07:40.190854+05:30)
+2026-05-03 14:07:40,201 INFO Scheduled ingestion job executed
+2026-05-03 14:07:40,201 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:17:40 IST)" executed successfully
+2026-05-03 14:17:24,638 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:27:24 IST)" (scheduled at 2026-05-03 14:17:24.627192+05:30)
+2026-05-03 14:17:24,638 INFO Scheduled ingestion job executed
+2026-05-03 14:17:24,638 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:27:24 IST)" executed successfully
+2026-05-03 14:17:40,203 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:27:40 IST)" (scheduled at 2026-05-03 14:17:40.190854+05:30)
+2026-05-03 14:17:40,203 INFO Scheduled ingestion job executed
+2026-05-03 14:17:40,203 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:27:40 IST)" executed successfully
+2026-05-03 14:32:40,877 WARNING Run time of job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:37:24 IST)" was missed by 0:05:16.250506
+2026-05-03 14:32:56,436 WARNING Run time of job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:37:40 IST)" was missed by 0:05:16.245959
+2026-05-03 14:37:24,635 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:47:24 IST)" (scheduled at 2026-05-03 14:37:24.627192+05:30)
+2026-05-03 14:37:24,635 INFO Scheduled ingestion job executed
+2026-05-03 14:37:24,635 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:47:24 IST)" executed successfully
+2026-05-03 14:37:40,198 INFO Running job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:47:40 IST)" (scheduled at 2026-05-03 14:37:40.190854+05:30)
+2026-05-03 14:37:40,198 INFO Scheduled ingestion job executed
+2026-05-03 14:37:40,198 INFO Job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 14:47:40 IST)" executed successfully
+2026-05-03 15:00:04,494 WARNING Run time of job "scheduled_job (trigger: interval[0:10:00], next run at: 2026-05-03 15:07:24 IST)" was missed by 0:02:39.867548
