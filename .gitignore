@@ -6,3 +6,7 @@ secret.key
 .DS_Store
 uploads/
 logs/
+*.mp4
+*.mov
+*.avi
+Demo Video.mp4
