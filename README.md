@@ -327,7 +327,7 @@ Sources supported:
 The application is deployed using Render cloud hosting platform.
 
 Live Deployment Link:
-
+https://proteccio-discover.onrender.com/
 
 
 ## How to Run
