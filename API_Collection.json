@@ -171,6 +171,161 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "Analyze",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"source_name\": \"Finance Database\",\r\n  \"source_type\": \"Database\",\r\n  \"data\": {\r\n    \"credit_card\": \"4111111111111111\",\r\n    \"bank_account\": \"123456789012\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/analyze",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "analyze"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by risk",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search/risk?level=Critical",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search",
+            "risk"
+          ],
+          "query": [
+            {
+              "key": "level",
+              "value": "Critical"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by classification",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search/classification?type=Sensitive Personal Data",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search",
+            "classification"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "Sensitive Personal Data"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by source",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search/source?name=Customer CSV",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search",
+            "source"
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Customer CSV"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Search by detection type",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/search/detection?type=email",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "search",
+            "detection"
+          ],
+          "query": [
+            {
+              "key": "type",
+              "value": "email"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Dashboard Metrics",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
     }
   ]
 }
