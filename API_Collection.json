@@ -326,6 +326,223 @@
         "header": []
       },
       "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "x-api-key",
+            "value": "proteccio123",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"admin\",\r\n    \"role\": \"admin\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/login",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Secure Route",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Compliance check",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"detections\": {\r\n        \"email\": [\"test@gmail.com\"],\r\n        \"aadhaar\": [\"123412341234\"],\r\n        \"credit_card\": [\"4111111111111111\"]\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/compliance/check",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "compliance",
+            "check"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Remediation",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"detections\": {\r\n        \"email\": [\"test@gmail.com\"],\r\n        \"credit_card\" : [\"4111111111111111\"],\r\n        \"pan\": [\"ABCDE1234F\"]\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/remediation/plan",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "remediation",
+            "plan"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Governance Dashboard",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Report",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"project\": \"Proteccio Discover\",\r\n    \"risk_score\": 78,\r\n    \"compliance_score\": 82\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/report/json",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "report",
+            "json"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Alerts",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"risk_score\": 85\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/alerts",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "alerts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Advanced Search",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"risk\":\"High\",\r\n    \"classification\": \"Sensitive\",\r\n    \"records\": [\r\n        {\r\n            \"name\":\"file1\",\r\n            \"risk\":\"High\",\r\n            \"classification\":\"Sensitive\"\r\n        },\r\n        {\r\n            \"name\": \"file2\",\r\n            \"risk\": \"Low\",\r\n            \"classification\": \"Public\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/advanced/search",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "advanced",
+            "search"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }

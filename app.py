@@ -20,6 +20,19 @@ from modules.profiler import profile_dataset
 from modules.mapper import generate_data_mapping
 from modules.audit import write_audit_log
 
+from modules.compliance import evaluate_compliance
+from modules.remediation import generate_remediation
+from modules.governance_dashboard import governance_metrics
+from modules.reporting import generate_json_report
+from modules.auth import generate_token
+from modules.alerts import generate_alerts
+from modules.advanced_search import advanced_filter
+from functools import wraps
+from flask import request, jsonify
+from modules.auth import verify_token
+
+
+
 from modules.search import (
     search_by_risk,
     search_by_classification,
@@ -36,6 +49,32 @@ app = Flask(__name__)
 API_KEY = os.getenv("API_KEY")
 
 ANALYSIS_HISTORY = []
+
+from functools import wraps
+from flask import request, jsonify
+from modules.auth import verify_token
+
+
+def token_required(f):
+
+    @wraps(f)
+    def decorated(*args, **kwargs):
+
+        token = request.headers.get("Authorization")
+
+        if not token:
+            return jsonify({"error": "Token missing"}), 401
+
+        token = token.replace("Bearer ", "")
+
+        decoded = verify_token(token)
+
+        if not decoded:
+            return jsonify({"error": "Invalid token"}), 401
+
+        return f(*args, **kwargs)
+
+    return decorated
 
 # API AUTHENTICATION
 
@@ -377,6 +416,102 @@ def dashboard_metrics():
     )
 
     return jsonify(metrics)
+
+# COMPLIANCE EVALUATION
+@app.route("/compliance/check", methods=["POST"])
+def compliance_check():
+
+    data = request.get_json()
+
+    detections = data.get("detections", {})
+
+    results = evaluate_compliance(detections)
+
+    return jsonify(results)
+
+# REMEDIATION
+@app.route("/remediation/plan", methods=["POST"])
+def remediation_plan():
+
+    data = request.get_json()
+
+    detections = data.get("detections", {})
+
+    results = generate_remediation(detections)
+
+    return jsonify(results)
+
+#GOVERNANCE_DASHBOARD
+@app.route("/governance/metrics", methods=["GET"])
+def governance_dashboard():
+
+    return jsonify(governance_metrics())
+
+#REPORTING
+@app.route("/report/json", methods=["POST"])
+def export_json_report():
+
+    data = request.get_json()
+
+    filename = generate_json_report(data)
+
+    return jsonify({
+        "message": "Report generated",
+        "filename": filename
+    })
+
+#AUTH
+@app.route("/login", methods=["POST"])
+def login():
+
+    data = request.get_json()
+
+    username = data.get("username")
+    role = data.get("role", "analyst")
+
+    token = generate_token(username, role)
+
+    return jsonify({
+        "token": token
+    })
+
+# ALERTS
+@app.route("/alerts", methods=["POST"])
+def alerts():
+
+    data = request.get_json()
+
+    risk_score = data.get("risk_score", 0)
+
+    results = generate_alerts(risk_score)
+
+    return jsonify(results)
+
+# ADVANCED_SEARCH
+@app.route("/advanced/search", methods=["POST"])
+def advanced_search():
+
+    data = request.get_json()
+
+    records = data.get("records", [])
+
+    risk = data.get("risk")
+
+    classification = data.get("classification")
+
+    results = advanced_filter(records, risk, classification)
+
+    return jsonify({
+        "results": results
+    })
+
+@app.route("/secure-data")
+@token_required
+def secure_data():
+
+    return jsonify({
+        "message": "Protected route accessed"
+    })
 
 
 # Main
